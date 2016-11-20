@@ -25,15 +25,19 @@ h3, p {
   text-align: center;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
-
-.logo {
+.cover .logo {
   box-sizing: border-box;
   width: 150px;
 }
-.logo img {
+.cover .logo img {
   width: 100%;
   margin-top: 20px;
   margin-left: 20px;
+}
+.cover .center-message {
+  box-sizing: border-box;
+  position: relative;
+  padding: 20%;
 }
 
 h1 {
@@ -64,12 +68,6 @@ p {
   font-family: Helvetica, Georgia, serif;
   font-size: 1.125em;
   font-weight: normal;
-}
-
-.center-message {
-  box-sizing: border-box;
-  position: relative;
-  padding: 20%;
 }
 
 .row {

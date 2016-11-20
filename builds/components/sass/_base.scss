@@ -34,17 +34,26 @@ $url_0: url(../images/cover-photo.jpg);
 	text-align: center;
 	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
 	text-shadow: 0 1px 3px $black_50;
-}
-.logo {
-	//Instead of the line below you could use @include box-sizing($bs)
-	box-sizing: border-box;
-	width: 150px;
-	img {
-		width: 100%;
-		margin-top: 20px;
-		margin-left: 20px;
+
+	.logo {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		width: 150px;
+		img {
+			width: 100%;
+			margin-top: 20px;
+			margin-left: 20px;
+		}
+	}
+
+	.center-message {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		position: relative;
+		padding: 20%;
 	}
 }
+
 h1 {
 	font-family: $coverFont;
 	font-size: 60px;
@@ -73,12 +82,7 @@ p {
 	font-size: 1.125em;
 	font-weight: normal;
 }
-.center-message {
-	//Instead of the line below you could use @include box-sizing($bs)
-	box-sizing: border-box;
-	position: relative;
-	padding: 20%;
-}
+
 .row {
 	width: 100%;
 }
