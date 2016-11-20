@@ -1,0 +1,116 @@
+//@extend-elements
+//original selectors
+//h3, p
+%extend_1 {
+	line-height: 1.3;
+	text-align: left;
+	color: $color_storm_dust_approx;
+}
+
+//original selectors
+//.image-frame-1, .image-frame-2
+%extend_2 {
+	position: absolute;
+	top: 70%;
+	height: 20%;
+	width: 100%;
+	text-align: center;
+	vertical-align: text-top;
+	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	text-shadow: 0 4px 3px $black_30;
+}
+
+
+.cover {
+	background: url(../images/cover-photo.jpg) no-repeat center center fixed;
+	background-size: cover;
+	height: 100%;
+	min-height: 100vh;
+	background-color: WhiteSmoke;
+	color: $white;
+	text-align: center;
+	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	text-shadow: 0 1px 3px $black_50;
+}
+.logo {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	width: 150px;
+	img {
+		width: 100%;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+}
+h1 {
+	font-family: Shadows Into Light, Raleway, Droid Sans;
+	font-size: 60px;
+	font-weight: normal;
+	line-height: 1.3;
+	text-align: left;
+}
+h2 {
+	font-family: helvetica, serif, arial;
+	font-size: 3em;
+	font-weight: bold;
+	color: $white;
+}
+h3 {
+	@extend %extend_1;
+	font-family: cairo, Raleway, Droid Sans;
+	font-size: 1.4em;
+	font-weight: 700;
+	line-height: 1.3;
+	text-align: left;
+	text-transform: uppercase;
+}
+p {
+	@extend %extend_1;
+	font-family: Helvetica, Georgia, serif;
+	font-size: 1.125em;
+	font-weight: normal;
+}
+.center-message {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	position: relative;
+	padding: 20%;
+}
+.row {
+	width: 100%;
+}
+.col-sm-6 {
+	padding: 3% 4%;
+}
+.header-paragraph {
+	height: 60px;
+	margin-bottom: 60px;
+}
+.paragraph {
+	height: 20em;
+	padding: 50px 0;
+	margin-bottom: 3.3%;
+}
+.footer-paragraph {
+	position: absolute;
+	margin-bottom: 50px;
+	height: 40px;
+	bottom: 2%;
+}
+.image-link {
+	display: inline-block;
+	float: left;
+	position: relative;
+	width: 50%;
+	img {
+		width: 100%;
+	}
+}
+.image-frame-1 {
+	@extend %extend_2;
+	background-color: $color_forest_green_50_approx;
+}
+.image-frame-2 {
+	@extend %extend_2;
+	background-color: $color_pizazz_50_approx;
+}

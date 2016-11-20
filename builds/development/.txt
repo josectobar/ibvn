@@ -1,0 +1,30 @@
+commit a8d7616bc17917932e56841897073841f2f04462
+tree 5250c992bcf0827777897ccb36f3ff97f70ba1b9
+parent 4df26e2ab721c9535da83d148e0ee031ea060d35
+author Jose Tobar <josectobar@gmail.com> 1479606741 -0700
+committer Jose Tobar <josectobar@gmail.com> 1479606741 -0700
+
+    restructuring directory based on workflow course from Lynda.com. Started working with gulp
+
+diff --git a/.gitignore b/.gitignore
+index 805d07f..a816f20 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -2,3 +2,5 @@
+ *.jpg
+ *.png
+ .ds_Store
++.tmp
++.sass-cache
+diff --git a/index.html b/index.html
+index 073d953..95b764a 100644
+--- a/index.html
++++ b/index.html
+@@ -7,7 +7,6 @@
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="./resources/bootstrap-3.3.7-dist/css/bootstrap.css" media="screen" title="no title">
+     <link rel="stylesheet" href="./resources/css/main.css" media="screen" title="no title">
+-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Raleway|Shadows+Into+Light|Cairo:400,500,600,700,800,900" rel="stylesheet">
+     <title>IBVN</title>
+ </head>
+ <body>
