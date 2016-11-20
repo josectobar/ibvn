@@ -1,0 +1,22 @@
+{
+  "name": "ibvn",
+  "version": "1.0.0",
+  "description": "Iglesia Bautista Vida Nueva",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-util": "^3.0.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josectobar/ibvn.git"
+  },
+  "author": "Jose Tobar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josectobar/ibvn/issues"
+  },
+  "homepage": "https://github.com/josectobar/ibvn#readme"
+}

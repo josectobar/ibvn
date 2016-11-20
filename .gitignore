@@ -4,3 +4,4 @@
 .ds_Store
 .tmp
 .sass-cache
+node_modules
