@@ -13,6 +13,9 @@ $url_0: url(../images/cover-photo.jpg);
 //original selectors
 //.image-frame-1, .image-frame-2
 %extend_2 {
+	h2 {
+		margin-top: 2.95%;
+	}
 	position: absolute;
 	bottom: 5%;
 	height: 20%;
@@ -21,8 +24,11 @@ $url_0: url(../images/cover-photo.jpg);
   vertical-align: middle;
 	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
 	text-shadow: 0 4px 3px $black_30;
-	@media (max-width: 800px) {
-		font-size: 60%;
+	@media (max-width: 750px) {
+		h2 {
+			margin-top: 2.5%;
+			font-size: 2.90em;
+		}
 	}
 }
 
@@ -57,23 +63,29 @@ $url_0: url(../images/cover-photo.jpg);
  }
 	.center-message {
 		//Instead of the line below you could use @include box-sizing($bs)
-		box-sizing: border-box;
-		position: relative;
-		padding: 20%;
+		// box-sizing: border-box;
+		// position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+		margin-left: 20%;
+		margin-right: 20%;
+		// padding: 20%;
+
 	}
 }
 
 h1 {
 	font-family: $coverFont;
-	font-size: 60px;
+	font-size: 3.95em;
 	font-weight: normal;
 	line-height: 1.3;
 	text-align: left;
 }
 h2 {
-	margin-top: 2%;
 	font-family: $headlineFont;
-	font-size: 3em;
+	font-size: 2.75em;
 	font-weight: bold;
 	color: $white;
 }
@@ -116,16 +128,19 @@ p {
 }
 .image-link {
 	display: inline-block;
+
 	float: left;
 	position: relative;
 	width: 50%;
 	img {
 		width: 100%;
-
-		@media (max-width: 700px) {
-			float: right;
-		}
 	}
+	@media (max-width: 750px) {
+		clear: right;
+		width: 90%;
+		margin-top: 5%;
+		margin-left: 5%;
+		}
 }
 .image-frame-1 {
 	@extend %extend_2;
